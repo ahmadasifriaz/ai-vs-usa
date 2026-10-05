@@ -118,14 +118,17 @@ function debounce(fn, delay = 250) {
 
   // Baqi event listeners same
   grid.addEventListener("click", (event) => {
-    const card = event.target.closest(".category-card");
-    if (!card) return;
-    const section = document.querySelector(`#details-${card.dataset.slug}`);
-    if (section &&!section.hidden) {
+  const card = event.target.closest(".category-card");
+  if (!card) return;
+  const section = document.querySelector(`#details-${card.dataset.slug}`);
+  if (section && !section.hidden) {
+    // INP 1080ms fix - heavy work ko next frame pe bhejo
+    requestAnimationFrame(() => {
       history.pushState(null, "", `#${section.id}`);
       section.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
+    });
+  }
+});
 
   closeButton.addEventListener("click", () => dialog.close());
   doneButton.addEventListener("click", () => dialog.close());
