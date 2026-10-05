@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ai-vs-usa.pages.dev/sitemap.xml
