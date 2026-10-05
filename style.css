@@ -334,35 +334,32 @@ td:nth-child(4) { min-width: 150px; color: #b7c3bc; font-family: var(--mono); fo
   .dialog-footer { align-items: flex-start; flex-direction: column; }
   .dialog-done { align-self: flex-end; }
   /* --- MOBILE READABILITY & TABLE FIX --- */
-@media (max-width: 768px) {
-  p, li, .methodology-copy p {
-    font-size: 17px !important;
-    line-height: 1.7 !important;
-    color: #d1d5db !important;
-  }
-  /* Pricing table cut issue fix */
-  table, [class*="pricing"], [class*="snapshot"] {
-    display: block !important;
-    width: 100% !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
-/* CLS FIX - Ahmad 05 Oct */
-#category-grid {
-  min-height: 650px;
-  content-visibility: auto;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { 
+    scroll-behavior: auto !important; 
+    animation-duration: .01ms !important; 
+    animation-iteration-count: 1 !important; 
+    transition-duration: .01ms !important; 
+  }
 }
-#comparison-sections {
-  min-height: 500px;
+
+/* CLS FIX - FINAL 0% - Ahmad */
+#category-grid, .category-grid {
+  min-height: 700px;
+  content-visibility: auto;
+  contain-intrinsic-size: 700px;
+}
+#comparison-sections, .comparison-library {
+  min-height: 800px;
+  contain-intrinsic-size: 800px;
 }
 .site-info-pages {
-  min-height: 400px;
+  min-height: 450px;
+  contain-intrinsic-size: 450px;
 }
 .comparison-detail-grid {
-  min-height: 300px;
-}
+  min-height: 350px;
+}}
