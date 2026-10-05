@@ -352,14 +352,17 @@ td:nth-child(4) { min-width: 150px; color: #b7c3bc; font-family: var(--mono); fo
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
-/* FINAL BIG FONT FIX */
-body {
-  font-size: 20px !important;
-  zoom: 112% !important;
-  line-height: 1.8 !important;
+/* CLS FIX - Ahmad 05 Oct */
+#category-grid {
+  min-height: 650px;
+  content-visibility: auto;
 }
-p, li, td, th, div, span {
-  font-size: 18px !important;
+#comparison-sections {
+  min-height: 500px;
 }
-h1 { font-size: 30px !important; }
-h2 { font-size: 30px !important; }
+.site-info-pages {
+  min-height: 400px;
+}
+.comparison-detail-grid {
+  min-height: 300px;
+}
