@@ -18,14 +18,14 @@
   const closeButton = document.querySelector(".dialog-close");
   const doneButton = document.querySelector(".dialog-done");
 
-  // DEBOUNCE - ye INP fix karega
-  function debounce(fn, delay = 200) {
-    let t;
-    return (...args) => {
-      clearTimeout(t);
-      t = setTimeout(() => fn(...args), delay);
-    };
-  }
+ // DEBOUNCE - INP 856ms fix - Ahmad
+function debounce(fn, delay = 250) {
+  let t;
+  return (...args) => {
+    clearTimeout(t);
+    t = setTimeout(() => fn(...args), delay);
+  };
+}
 
   if (!Array.isArray(categories) || categories.length!== 15) {
     throw new Error("AI VS expected exactly 15 category datasets.");
