@@ -2,14 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ai-vs-usa.pages.dev/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-<url>
-  <loc>https://ai-vs-usa.pages.dev/articles/ai-vs-usa-2026-guide.html</loc>
-  <lastmod>2026-05-11</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://ai-vs-usa.pages.dev/about.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai-vs-usa.pages.dev/contact.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai-vs-usa.pages.dev/privacy.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai-vs-usa.pages.dev/articles/ai-vs-human-intelligence.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai-vs-usa.pages.dev/articles/ai-vs-usa-economy.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai-vs-usa.pages.dev/articles/ai-vs-usa-military.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
